@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const Todo = ({ onClick, completed, text }) => (
   <li
-    onClck={onClick}
+    onClick={onClick}
     style={{
       textDecoration: completed ? "line-through" : "none"
     }}
@@ -13,7 +13,7 @@ const Todo = ({ onClick, completed, text }) => (
 );
 
 Todo.propTypes = {
-  onClck: PropTypes.func.isRequired,
+  onClick: PropTypes.func.isRequired,
   completed: PropTypes.bool.isRequired,
   text: PropTypes.string.isRequired
 };

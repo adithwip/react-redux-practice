@@ -10,6 +10,7 @@ const todos = (state = [], action) => {
         }
       ];
     case "TOGGLE_TODO":
+      console.log("masuk");
       return state.map(todo =>
         todo.id === action.id ? { ...todo, completed: !todo.completed } : todo
       );
